@@ -22,12 +22,12 @@ Utilisez ce script seulement en tant que `root`
 ### Utilisation
 ```bash
 	cd /opt/vps
-	./my_server.sh -p `100` -u sudo_user --passwd sercret
+	./my_server.sh -p 100 -u sudo_user --passwd sercret
   ```
 ### Test
 Cette commande doit être lancée depuis votre machine locale
 ```bash
-	ssh -p`100` sudo_user@_votre_IP
+	ssh -p100 sudo_user@_votre_IP
   ```
 
 Pour en savoir plus sur la connexion par clé publique/privée pour plus de sécurité lisez l'article suivant: [Sécurisez votre serveur dédidé (VPS) de manière optimale](https://www.camoo.hosting/blog/13/securisez-votre-serveur-dedie.html)

@@ -44,6 +44,13 @@ if [ -z "$SUDOUSER" ]; then
  exit 0
 fi
 
+iUserExists=$(grep -c "^$SUDOUSER:" /etc/passwd)
+if [ $iUserExists -gt 0 ]; then
+  echo "User ${SUDOUSER} already exists!"
+  echo "[FAILED]"
+  exit 0
+fi
+
 apt-get update
 apt-get dist-upgrade
 apt-get update
