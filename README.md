@@ -3,7 +3,7 @@ Sécurisez votre serveur dédidé (VPS) de manière optimale
 
 Utiliser ce script pour changer rapidement le port par défaut et créer un utilisateur sudo sur votre serveur.
 
-Utilisez ce script seulement en tant que `root`
+Utilisez ce script seulement en tant que `root` `(Ubuntu >= 16.04)`
 
 ## Options
 #### Change le port par défaut du serveur
@@ -30,4 +30,4 @@ Cette commande doit être lancée depuis votre machine locale
 	ssh -p100 sudo_user@_votre_IP
   ```
 
-Pour en savoir plus sur la connexion par clé publique/privée pour plus de sécurité lisez l'article suivant: [Sécurisez votre serveur dédidé (VPS) de manière optimale](https://www.camoo.hosting/blog/13/securisez-votre-serveur-dedie.html)
+Pour en savoir plus sur la connexion par clé publique/privée, lisez l'article suivant: [Sécurisez votre serveur dédidé (VPS) de manière optimale](https://www.camoo.hosting/blog/13/securisez-votre-serveur-dedie.html)

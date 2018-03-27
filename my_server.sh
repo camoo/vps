@@ -51,10 +51,6 @@ if [ $iUserExists -gt 0 ]; then
   exit 0
 fi
 
-apt-get update
-apt-get dist-upgrade
-apt-get update
-
 # change default port
 sed -i "s/^Port.*/Port ${PORT}/" /etc/ssh/sshd_config
 sed -i "s/^PermitRootLogin.*/PermitRootLogin no/" /etc/ssh/sshd_config
