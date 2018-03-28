@@ -66,6 +66,13 @@ fi
 gpasswd -a ${SUDOUSER} sudo
 chmod 711 /home/${SUDOUSER}
 
+# prepare authorized_keys file
+mkdir -p /home/${SUDOUSER}/.ssh
+chmod 700 /home/${SUDOUSER}/.ssh
+touch /home/${SUDOUSER}/.ssh/authorized_keys
+chmod 600 /home/${SUDOUSER}/.ssh/authorized_keys
+chown -R ${SUDOUSER}:${SUDOUSER} /home/${SUDOUSER}/.ssh
+
 echo "[DONE]"
 
 if [[ -n $1 ]]; then
